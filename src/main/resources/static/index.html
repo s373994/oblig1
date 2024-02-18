@@ -13,16 +13,43 @@
 </style>
 <body>
 <h1 class="h1 text-center">Bestilling av kino biletter</h1>
-<form action="#">
-    <label for="filmer"><Select></Select> film:</label>
-    <select id="filmer" class="form-select" aria-label="Default select example">
+<form id = "billettSkjema">
+    <label for="filmer">Velg film:</label>
+    <select id="filmer" class="form-select">
         <option value="blank"></option>
-        <option value="harry potter">harry potter1</option>
-        <option value="harry potter">harry potter2</option>
-        <option value="harry potter">harry potter3</option>
-        <option value="harry potter">harry potter4</option>
+        <option value="1">Fast And Furious 1</option>
+        <option value="2">Fast And Furious 2</option>
+        <option value="3">Fast And Furious 3</option>
+        <option value="4">Fast And Furious 4</option>
     </select>
-    <br>
+</form>
+
+    <label for="antall">Antall billetter:</label>
+    <input type="text" id="antall" name="antall" required min = "1" placeholder="Skriv inn et antall"><br>
+
+    <label for="fornavn">Fornavn:</label>
+    <input type="text" id="fornavn" placeholder="Skriv inn fornavn"><br>
+
+    <label for="etternavn">Etternavn:</label>
+    <input type="text" id="etternavn"><br>
+
+    <label for="telefon">Telefon:</label>
+    <input type="tel" id="telefon"><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email"><br>
+
+<button type="button" id="kjøpBillett">Kjøp Billett</button>
+
+<!-- Liste over alle billetter etter å ha trukket på kjøp billett-->
+<h2>Alle Billetter</h2>
+<ul id="ListeBillett"></ul>
+
+<!-- Knapp for å slette alle billettene -->
+<button type="button" id="slettAlleBilletter">Slett alle billetter</button>
+
+<!-- JavaScript-fil koblet til html filen -->
+<script src="script.js"></script>
 
 </body>
 </html>
